@@ -26,7 +26,7 @@
             FusionCharts lineChart = new FusionCharts(
                         "pie3d",// chartType
                         "ex2",// chartId
-                        600,400,// chartWidth, chartHeight
+                        "600","400",// chartWidth, chartHeight
                         "chart",// chartContainer
                         "json",// dataFormat
                         "{\"chart\":{\"caption\":\"Ageprofileofwebsitevisitors\",\"subcaption\":\"LastYear\",\"startingangle\":\"120\",\"showlabels\":\"0\",\"showlegend\":\"1\",\"enablemultislicing\":\"0\",\"slicingdistance\":\"15\",\"showpercentvalues\":\"1\",\"showpercentintooltip\":\"0\",\"plottooltext\":\"Agegroup:$labelTotalvisit:$datavalue\",\"theme\":\"ocean\"},				\"data\":				[{\"label\":\"Teenage\",\"value\":\"1250400\"					},					{\"label\":\"Adult\",\"value\":\"1463300\"					},					{\"label\":\"Mid-age\",\"value\":\"1050700\"					},					{\"label\":\"Senior\",\"value\":\"491000\"					}				]}"

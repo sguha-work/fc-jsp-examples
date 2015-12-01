@@ -32,7 +32,7 @@
             FusionCharts funnel = new FusionCharts(
                         "funnel",// chartType
                         "ex92",// chartId
-                        600,400,// chartWidth, chartHeight
+                        "600", "400",// chartWidth, chartHeight
                         "chart2",// chartContainer
                         "json",// dataFormat
                         "{\"chart\": {\"bgcolor\": \"FFFFFF\",\"caption\": \"Conversion Funnel - 2013\",\"decimals\": \"1\",\"basefontsize\": \"11\",\"issliced\": \"0\",\"ishollow\": \"1\",\"labeldistance\": \"8\",\"showBorder\": \"0\"},\"data\": [{\"label\": \"Website Visits\",\"value\": \"385634\"},{\"label\": \"Downloads\",\"value\": \"145631\",\"color\": \"008ee4\"},{\"label\": \"Interested to buy\",\"value\": \"84564\",\"color\": \"f8bd19\"},{\"label\": \"Contract finalized\",\"value\": \"50654\",\"color\": \"6baa01\"},{\"label\": \"Purchased\",\"value\": \"25342\",\"color\": \"e44a00\"}]}"

@@ -26,7 +26,7 @@
             FusionCharts lineChart = new FusionCharts(
                         "column2d",// chartType
                         "ex1",// chartId
-                        600,400,// chartWidth, chartHeight
+                        "600","400",// chartWidth, chartHeight
                         "chart",// chartContainer
                         "json",// dataFormat
                         "{\"chart\":{\"caption\":\"Harry\'sSuperMart\",\"subCaption\":\"Top5storesinlastmonthbyrevenue\",\"numberPrefix\":\"$\",\"theme\":\"ocean\"			},			\"data\":			[{\"label\":\"BakersfieldCentral\",\"value\":\"880000\"				},				{\"label\":\"GardenGrooveharbour\",\"value\":\"730000\"				},				{\"label\":\"LosAngelesTopanga\",\"value\":\"590000\"				},				{\"label\":\"Compton-RanchoDom\",\"value\":\"520000\"	},	{\"label\":\"DalyCitySerramonte\",\"value\":\"330000\"	}]}"

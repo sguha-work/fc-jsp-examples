@@ -26,7 +26,7 @@
             FusionCharts lineChart = new FusionCharts(
                         "column2d",// chartType
                         "ex6",// chartId
-                        600,400,// chartWidth, chartHeight
+                        "600", "400",// chartWidth, chartHeight
                         "chart",// chartContainer
                         "xmlurl",// dataFormat
                         "data/data.xml"
