@@ -21,7 +21,7 @@
             /* **Step 2:** Include the package in the file where you want to show FusionCharts as follows */    
         %>
         <%@page import="FusionCharts.FusionCharts" %>
-        <%
+        <% 
             /* **Step 3:** Create a chart object using the FusionCharts JAVA class constructor. Syntax for the constructor: `FusionCharts("type of chart", "unique chart id", "width of chart", "height of chart", "div id to render the chart", "data format", "data source")`   */
             FusionCharts lineChart = new FusionCharts(
                         "column2d",// chartType
