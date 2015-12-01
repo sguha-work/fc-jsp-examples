@@ -1,0 +1,17 @@
+SMAP
+fetch_002ddata_002dfrom_002da_002dJSON_002dURL_jsp.java
+JSP
+*S JSP
+*F
++ 0 fetch-data-from-a-JSON-URL.jsp
+fetch-data-from-a-JSON-URL.jsp
+*L
+5,15:45
+22:63,2
+23,2:65
+26,9:69
+34,2:78
+37:82,2
+38:84,3
+39,3:87
+*E
