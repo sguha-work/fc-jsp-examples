@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import FusionCharts.FusionCharts;
 
-public final class a_002dsimple_002dchart_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class realtime_002darea_002dchart_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -49,41 +49,32 @@ public final class a_002dsimple_002dchart_jsp extends org.apache.jasper.runtime.
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>A Simple Chart</title>\n");
+      out.write("        <title>Realtime Area Chart</title>\n");
       out.write("        <script type=\"text/javascript\" src=\"http://static.fusioncharts.com/code/latest/fusioncharts.js\"></script>\n");
       out.write("        <script type=\"text/javascript\" src=\"http://static.fusioncharts.com/code/latest/fusioncharts.charts.js\"></script>\n");
       out.write("        <script type=\"text/javascript\" src=\"http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.ocean.js\"></script>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <div id=\"chart\"></div>\n");
+      out.write("        \n");
+      out.write("        \n");
       out.write("        ");
-
-            /* **Step 1:** Include the `FusionCharts.java` file as a package in your project. Suppose the package named com.example */
-            /* **Step 2:** Include the package in the file where you want to show FusionCharts as follows */    
+ 
+            
+            FusionCharts realtimearea = new FusionCharts(
+                        "realtimearea",// chartType
+                        "stockRealTimeChart",// chartId
+                        "100%","400",// chartWidth, chartHeight
+                        "chart",// chartContainer
+                        "json",// dataFormat
+                        "{\"chart\": {\"caption\": \"Real-time stock price monitor\",\"subCaption\": \"Harry\'s SuperMart\",\"xAxisName\": \"Time\",\"yAxisName\": \"Stock Price\",\"numberPrefix\": \"$\",\"refreshinterval\": \"5\",\"yaxisminvalue\": \"35\",\"yaxismaxvalue\": \"36\",\"numdisplaysets\": \"10\",\"labeldisplay\": \"rotate\",\"showValues\": \"0\",\"showRealTimeValue\": \"0\", \"paletteColors\" : \"#0075c2,#1aaf5d\",\"baseFontColor\" : \"#333333\",\"baseFont\" : \"Helvetica Neue,Arial\",\"captionFontSize\" : \"14\",\"subcaptionFontSize\" : \"14\",\"subcaptionFontBold\" : \"0\",\"showBorder\" : \"0\",\"bgColor\" : \"#ffffff\",\"showShadow\" : \"0\",\"canvasBgColor\" : \"#ffffff\",\"canvasBorderAlpha\" : \"0\",\"divlineAlpha\" : \"100\",\"divlineColor\" : \"#999999\",\"divlineThickness\" : \"1\",\"divLineIsDashed\" : \"1\",\"divLineDashLen\" : \"1\",\"divLineGapLen\" : \"1\",\"usePlotGradientColor\" : \"0\",\"showplotborder\" : \"0\",\"showXAxisLine\" : \"1\",\"xAxisLineThickness\" : \"1\",\"xAxisLineColor\" : \"#999999\",\"showAlternateHGridColor\" : \"0\"},\"categories\": [{\"category\": [{ \"label\": \"Day Start\" }]}],\"dataset\": [{\"data\": [{ \"value\": \"35.27\" }]}]}",//datasource
+                        "{\"events\": {			\"rendered\": function (e) {alert(\"x\");}}}"
+                    );
         
       out.write("\n");
       out.write("        \n");
       out.write("        ");
- 
-            /* **Step 3:** Create a chart object using the FusionCharts JAVA class constructor. Syntax for the constructor: `FusionCharts("type of chart", "unique chart id", "width of chart", "height of chart", "div id to render the chart", "data format", "data source")`   */
-            FusionCharts lineChart = new FusionCharts(
-                        "column2d",// chartType
-                        "ex1",// chartId
-                        "600","400",// chartWidth, chartHeight
-                        "chart",// chartContainer
-                        "json",// dataFormat
-                        "{\"chart\":{\"caption\":\"Harry\'sSuperMart\",\"subCaption\":\"Top5storesinlastmonthbyrevenue\",\"numberPrefix\":\"$\",\"theme\":\"ocean\"			},			\"data\":			[{\"label\":\"BakersfieldCentral\",\"value\":\"880000\"				},				{\"label\":\"GardenGrooveharbour\",\"value\":\"730000\"				},				{\"label\":\"LosAngelesTopanga\",\"value\":\"590000\"				},				{\"label\":\"Compton-RanchoDom\",\"value\":\"520000\"	},	{\"label\":\"DalyCitySerramonte\",\"value\":\"330000\"	}]}"
-                        
-                    );
-        
-      out.write("\n");
-      out.write("        ");
-
-            /* **Step 4:** Render the chart */
-        
-      out.write("\n");
-      out.write("        ");
-      out.print(lineChart.render());
+      out.print(realtimearea.render());
       out.write("\n");
       out.write("    </body>\n");
       out.write("</html>\n");
